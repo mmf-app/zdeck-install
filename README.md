@@ -15,23 +15,19 @@ iPad / Android から ZBrush を操作するコントローラー。
 |---------|------|
 | [`zdeck-python-win-setup.exe`](../../releases/latest) | ZBrush 2026 / Windows |
 
-版番号・チェックサム: [`latest.json`](./latest.json)  
+バージョン番号・チェックサム: [`latest.json`](./latest.json)  
 macOS / ZBrush 2022–2025（ZScript）は準備中。
-
-※ GitHub の **Source code (zip)** はリポジトリのコピーです。インストールには使いません。
 
 ### インストール
 
 1. `zdeck-python-win-setup.exe` をダウンロード  
 2. 実行（SmartScreen →「詳細情報」→「実行」）  
-3. 画面の案内に従う（自己診断失敗時はインストール失敗）  
+3. 画面の案内に従う  
 4. ZBrush が開いていたら一度終了して開き直す  
-
-Python の別途インストールは不要。
 
 ### 接続
 
-1. スマホ / タブレットを PC と同じ Wi-Fi にする  
+1. スマホ / タブレットを PC と同じ Wi-Fi に接続する  
 2. zdeck アプリを開く  
 3. PC を選ぶ（出なければ再検索、または IP 入力）  
 4. 操作が届かないとき  
@@ -40,11 +36,24 @@ Python の別途インストールは不要。
 
 ### アプリ
 
-ストア公開準備中。それまでは開発ビルドを利用（手順は開発リポジトリ参照）。
+ストア公開予定です。
+
+- [App Store](https://www.apple.com/jp/app-store/)
+- [Google Play](https://play.google.com/store)
 
 ### 不具合
 
-Issues に ZBrush の版・OS・自己診断の文言を添えてください。
+報告は [Issues](../../issues) へ。次を含めてください。
+
+```
+- OS:
+- ZBrush バージョン:
+- zdeck インストーラ / アプリのバージョン:
+- 再現手順:
+- 期待する結果:
+- 実際の結果:
+- 自己診断やエラーの文言（あれば）:
+```
 
 ---
 
@@ -64,20 +73,16 @@ This repo hosts **PC install packages only** (no app source).
 Version / checksums: [`latest.json`](./latest.json)  
 macOS and ZBrush 2022–2025 (ZScript): coming soon.
 
-\* GitHub **Source code (zip)** is just a repo archive — not the installer.
-
 ### Install
 
 1. Download `zdeck-python-win-setup.exe`  
 2. Run it (SmartScreen → **More info** → **Run anyway**)  
-3. Follow the wizard (failed self-diagnosis = failed install)  
+3. Follow the wizard  
 4. If ZBrush was open, quit and reopen it  
-
-No separate Python install required.
 
 ### Connect
 
-1. Phone / tablet on the same Wi-Fi as the PC  
+1. Connect your phone / tablet to the same Wi-Fi as the PC  
 2. Open the zdeck app  
 3. Select the PC (or search again / enter IP)  
 4. If connected but nothing happens  
@@ -86,8 +91,21 @@ No separate Python install required.
 
 ### App
 
-Store release in preparation. Use a development build until then (see the development repo).
+Store release planned.
+
+- [App Store](https://www.apple.com/app-store/)
+- [Google Play](https://play.google.com/store)
 
 ### Issues
 
-File an Issue with ZBrush version, OS, and any installer self-diagnosis text.
+Report via [Issues](../../issues). Please include:
+
+```
+- OS:
+- ZBrush version:
+- zdeck installer / app version:
+- Steps to reproduce:
+- Expected result:
+- Actual result:
+- Self-diagnosis or error text (if any):
+```
