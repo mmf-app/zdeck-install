@@ -1,14 +1,19 @@
 {
   "name": "zdeck",
   "version": "0.1.0",
-  "releasedAt": "2026-08-16T13:25:01Z",
+  "releasedAt": "2026-10-04T05:15:46Z",
+  "app": {
+    "version": "0.1.0",
+    "ios": "0.1.0",
+    "android": "0.1.0"
+  },
   "packages": [
     {
       "id": "python-win",
-      "file": "zdeck-python-win.zip",
+      "file": "zdeck-python-win-setup.exe",
       "target": "ZBrush 2026 / Windows",
-      "sha256": "cad4be4cda3e61ad1a8a244a4e99630adf7508f66422e20439d2e43282c77892",
-      "bytes": 11185873
+      "sha256": "1d4db6c831c0fe7914d23651b545edb85b1b85bcda4d6e53022b26846622ae68",
+      "bytes": 11070824
     }
   ]
 }
