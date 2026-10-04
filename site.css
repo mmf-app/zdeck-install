@@ -461,10 +461,15 @@ main {
   margin: 0 0 0.35rem;
 }
 
-.price-card > p:last-child {
+.price-card ul {
   margin: 0;
+  padding-left: 1.15rem;
   color: var(--muted);
   font-size: 0.98rem;
+}
+
+.price-card li {
+  margin: 0.35rem 0;
 }
 
 .price {
