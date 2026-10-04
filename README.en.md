@@ -2,6 +2,8 @@
 
 [日本語](README.md) · **English**
 
+---
+
 PC client for the mobile app **zdeck**.
 
 ### Download
