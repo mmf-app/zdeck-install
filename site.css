@@ -405,10 +405,11 @@ main {
 }
 
 .price__value {
-  font-family: var(--brand);
+  font-family: var(--body);
   font-size: 1.7rem;
   font-weight: 700;
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
+  font-variant-numeric: tabular-nums;
 }
 
 .price__unit {
@@ -450,9 +451,11 @@ main {
 }
 
 .release-item__tag {
-  font-family: var(--brand);
+  font-family: var(--body);
   font-weight: 700;
   font-size: 1rem;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
 }
 
 .release-item time {
