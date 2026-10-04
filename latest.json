@@ -1,7 +1,7 @@
 {
   "name": "zdeck",
   "version": "0.1.0",
-  "releasedAt": "2026-10-04T07:21:48Z",
+  "releasedAt": "2026-10-04T07:29:47Z",
   "app": {
     "version": "0.1.0",
     "ios": "0.1.0",
@@ -12,15 +12,15 @@
       "id": "python-win",
       "file": "zdeck-python-win-setup.exe",
       "target": "ZBrush 2026 / Windows",
-      "sha256": "1d4db6c831c0fe7914d23651b545edb85b1b85bcda4d6e53022b26846622ae68",
-      "bytes": 11070824
+      "sha256": "a7093c83304873b11f1e9e576529cb602555ba86966228646668ee5ed5ba3598",
+      "bytes": 11062847
     },
     {
       "id": "zscript-win",
       "file": "zdeck-zscript-win-setup.exe",
       "target": "ZBrush 2022\u20132025 / Windows",
-      "sha256": "e7f88cedc0031dead5df075f821fbf1afec72cc384d49080027be03aa78b076d",
-      "bytes": 11073652
+      "sha256": "1247e3499dbb9b09ca9918df4a68632750e109688b570a7249c7e006cb20f428",
+      "bytes": 11061257
     }
   ]
 }
