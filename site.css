@@ -7,8 +7,8 @@
   --accent: #0f7a68;
   --accent-deep: #0a5347;
   --glow: rgba(15, 122, 104, 0.18);
-  --brand: "Syne", system-ui, sans-serif;
-  --body: "Figtree", system-ui, sans-serif;
+  --brand: "Manrope", "Segoe UI", sans-serif;
+  --body: "Source Sans 3", "Segoe UI", sans-serif;
   --max: 68rem;
 }
 
@@ -63,9 +63,9 @@ a:hover {
 .brand {
   font-family: var(--brand);
   font-weight: 800;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.02em;
   font-size: clamp(2.8rem, 8vw, 5.2rem);
-  line-height: 0.95;
+  line-height: 1.05;
   margin: 0 0 1rem;
   animation: rise 0.8s ease both;
 }
@@ -91,10 +91,10 @@ a:hover {
   font-family: var(--brand);
   font-weight: 700;
   font-size: clamp(1.55rem, 3.4vw, 2.35rem);
-  letter-spacing: -0.03em;
-  line-height: 1.2;
+  letter-spacing: -0.015em;
+  line-height: 1.3;
   margin: 0 0 0.85rem;
-  max-width: 16ch;
+  max-width: 18ch;
   animation: rise 0.8s ease 0.08s both;
 }
 
