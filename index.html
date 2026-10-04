@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Source+Sans+3:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="site.css?v=4" />
+    <link rel="stylesheet" href="site.css?v=5" />
   </head>
   <body>
     <div class="atmosphere" aria-hidden="true"></div>
@@ -50,7 +50,7 @@
           <article class="surface pair-panel" id="app">
             <h3>モバイルアプリ</h3>
             <p class="pair-panel__lede">iPad / Android 向け。各ストアから入手できます（公開準備中）。</p>
-            <div class="store-row">
+            <div class="store-row store-row--stack">
               <a
                 class="store-badge store-badge--ios"
                 href="https://www.apple.com/jp/app-store/"
@@ -90,38 +90,41 @@
 
           <article class="surface pair-panel" id="pc">
             <h3>PC クライアント</h3>
-            <p class="pair-panel__lede">ZBrush が入っている Windows PC にインストールします。バージョンに合う exe を選んでください。</p>
-            <div class="pc-downloads">
-              <a
-                class="pc-dl"
-                href="https://github.com/mmf-app/zdeck-installer/releases/latest/download/zdeck-python-win-setup.exe"
-              >
-                <span class="pc-dl__main">
-                  <span class="pc-dl__target">ZBrush 2026</span>
-                  <span class="pc-dl__meta">Windows · zdeck-python-win-setup.exe</span>
-                </span>
-                <span class="pc-dl__cta">ダウンロード</span>
-              </a>
-              <a
-                class="pc-dl"
-                href="https://github.com/mmf-app/zdeck-installer/releases/latest/download/zdeck-zscript-win-setup.exe"
-              >
-                <span class="pc-dl__main">
-                  <span class="pc-dl__target">ZBrush 2022–2025</span>
-                  <span class="pc-dl__meta">Windows · zdeck-zscript-win-setup.exe</span>
-                </span>
-                <span class="pc-dl__cta">ダウンロード</span>
-              </a>
+            <p class="pair-panel__lede">ZBrush が入っている PC にインストールします。お使いの OS と ZBrush に合うファイルを選んでください。</p>
+            <div class="os-block">
+              <h4 class="os-block__label">Windows</h4>
+              <div class="pc-downloads">
+                <a
+                  class="pc-dl"
+                  href="https://github.com/mmf-app/zdeck-installer/releases/latest/download/zdeck-python-win-setup.exe"
+                >
+                  <span class="pc-dl__main">
+                    <span class="pc-dl__target">For ZBrush 2026</span>
+                    <span class="pc-dl__meta">zdeck-python-win-setup.exe</span>
+                  </span>
+                  <span class="pc-dl__cta">ダウンロード <span aria-hidden="true">↓</span></span>
+                </a>
+                <a
+                  class="pc-dl"
+                  href="https://github.com/mmf-app/zdeck-installer/releases/latest/download/zdeck-zscript-win-setup.exe"
+                >
+                  <span class="pc-dl__main">
+                    <span class="pc-dl__target">For ZBrush 2022–2025</span>
+                    <span class="pc-dl__meta">zdeck-zscript-win-setup.exe</span>
+                  </span>
+                  <span class="pc-dl__cta">ダウンロード <span aria-hidden="true">↓</span></span>
+                </a>
+              </div>
+            </div>
+            <div class="os-block">
+              <h4 class="os-block__label">macOS</h4>
               <div class="pc-dl pc-dl--soon" aria-disabled="true">
                 <span class="pc-dl__main">
-                  <span class="pc-dl__target">macOS</span>
-                  <span class="pc-dl__meta">準備中</span>
+                  <span class="pc-dl__target">準備中</span>
+                  <span class="pc-dl__meta">近日公開予定</span>
                 </span>
               </div>
             </div>
-            <p class="pair-panel__note">
-              インストール後は ZBrush を開き直してください。2022–2025 では Zplugin → <strong>Start zdeck</strong> が必要です。
-            </p>
           </article>
         </div>
       </section>
