@@ -6,9 +6,9 @@
   --sunken: #141414;
   --panel: #2b2b2b;
   --line: #3a3a3a;
-  --accent: #c96a32;
-  --accent-soft: #d9844c;
-  --accent-dim: #8a4a22;
+  --accent: #a85a2c;
+  --accent-soft: #c07040;
+  --accent-dim: #7a4020;
   --key: #333333;
   --brand: "Manrope", "Segoe UI", sans-serif;
   --body: "Source Sans 3", "Segoe UI", sans-serif;
@@ -133,7 +133,7 @@ a:hover {
 }
 
 .btn--ghost:hover {
-  background: rgba(201, 106, 50, 0.14);
+  background: rgba(168, 90, 44, 0.14);
   color: var(--ink);
 }
 
@@ -172,7 +172,7 @@ a:hover {
 }
 .deck span:nth-child(5) {
   animation-delay: 0.3s;
-  background: rgba(201, 106, 50, 0.4);
+  background: rgba(168, 90, 44, 0.38);
 }
 .deck span:nth-child(8) {
   animation-delay: 0.45s;
