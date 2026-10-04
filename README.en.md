@@ -6,9 +6,9 @@ PC client for the mobile app **zdeck**.
 
 ### Download
 
-| File | Target |
-|------|--------|
-| [`zdeck-python-win-setup.exe`](../../releases/latest) | ZBrush 2026 / Windows |
+| Target | File |
+|--------|------|
+| ZBrush 2026 / Windows | [`zdeck-python-win-setup.exe`](../../releases/latest) |
 
 macOS and ZBrush 2022–2025 (ZScript): coming soon.
 

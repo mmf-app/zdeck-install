@@ -6,9 +6,9 @@
 
 ### ダウンロード
 
-| ファイル | 対象 |
-|---------|------|
-| [`zdeck-python-win-setup.exe`](../../releases/latest) | ZBrush 2026 / Windows |
+| 対象 | ファイル |
+|------|---------|
+| ZBrush 2026 / Windows | [`zdeck-python-win-setup.exe`](../../releases/latest) |
 
 macOS / ZBrush 2022–2025（ZScript）は準備中。
 
