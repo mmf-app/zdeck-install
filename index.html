@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>zdeck — タブレットから ZBrush を操作</title>
+    <meta
+      name="description"
+      content="zdeck は iPad / Android から ZBrush を操作するコントローラーです。機能・料金・導入手順をまとめています。"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Syne:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="site.css" />
+  </head>
+  <body>
+    <div class="atmosphere" aria-hidden="true"></div>
+
+    <header class="hero">
+      <div class="hero__copy">
+        <p class="brand">zdeck</p>
+        <h1>タブレットから、ZBrush を操作する</h1>
+        <p class="lede">
+          同じ Wi‑Fi 上の PC に接続し、カスタムデッキでブラシやジオメトリを素早く叩くためのコントローラーです。
+        </p>
+        <div class="cta">
+          <a class="btn btn--primary" href="#get">入手する</a>
+          <a class="btn btn--ghost" href="#setup">導入手順</a>
+        </div>
+      </div>
+      <div class="hero__visual" aria-hidden="true">
+        <div class="deck">
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="get" class="section">
+        <h2>入手</h2>
+        <p class="section__lede">アプリはストアから。PC 側は ZBrush のバージョンに合うインストーラを選んでください。</p>
+        <div class="get-grid">
+          <div>
+            <h3>アプリ</h3>
+            <ul class="plain">
+              <li><a href="https://www.apple.com/jp/app-store/">App Store</a>（公開予定）</li>
+              <li><a href="https://play.google.com/store">Google Play</a>（公開予定）</li>
+            </ul>
+          </div>
+          <div>
+            <h3>PC クライアント</h3>
+            <ul class="plain">
+              <li>
+                ZBrush 2026 / Windows —
+                <a href="https://github.com/mmf-app/zdeck-installer/releases/latest/download/zdeck-python-win-setup.exe"
+                  >zdeck-python-win-setup.exe</a
+                >
+              </li>
+              <li>
+                ZBrush 2022–2025 / Windows —
+                <a href="https://github.com/mmf-app/zdeck-installer/releases/latest/download/zdeck-zscript-win-setup.exe"
+                  >zdeck-zscript-win-setup.exe</a
+                >
+              </li>
+              <li>macOS — 準備中</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section">
+        <h2>できること</h2>
+        <ul class="feature-list">
+          <li>カスタムデッキで press / slider / stepper を配置</li>
+          <li>同一 Wi‑Fi 上の PC を自動検出（手動 IP も可）</li>
+          <li>ZBrush 2026（Python）と 2022–2025（ZScript）に対応</li>
+          <li>シート分割・グリッド調整で手元の作業に合わせる</li>
+        </ul>
+      </section>
+
+      <section id="pricing" class="section">
+        <h2>料金</h2>
+        <p class="section__lede">価格は各ストアの表示に準拠します。ログインやアカウント登録は不要です。</p>
+        <div class="price-row">
+          <article>
+            <h3>Free</h3>
+            <p>お試し利用。シート数・タイル数などに上限あり。初回利用から短期間はフル操作を体験できます。</p>
+          </article>
+          <article>
+            <h3>Pro</h3>
+            <p>買い切り。レイアウト制限を解除し、通常の制作フロー向けに使えます。</p>
+          </article>
+          <article>
+            <h3>Pro+</h3>
+            <p>年額。Pro の内容に加え、追加の継続特典を予定しています。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="setup" class="section">
+        <h2>導入</h2>
+        <ol class="steps">
+          <li>スマホ / タブレットと PC を同じ Wi‑Fi に接続する</li>
+          <li>上の表から ZBrush に合う exe を入れ、案内に従う</li>
+          <li>ZBrush を開き直す（2022–2025 は Zplugin → <strong>Start zdeck</strong> を一度押す）</li>
+          <li>zdeck アプリを開き、PC を選ぶ（出なければ再検索、または IP 入力）</li>
+        </ol>
+      </section>
+
+      <section id="release" class="section">
+        <h2>リリース</h2>
+        <p class="section__lede">
+          最新ホストパッケージ:
+          <strong id="release-version">…</strong>
+          <span id="release-date" class="muted"></span>
+        </p>
+        <p>
+          <a id="release-link" href="https://github.com/mmf-app/zdeck-installer/releases/latest"
+            >GitHub Releases で詳細を見る</a
+          >
+        </p>
+      </section>
+
+      <section id="help" class="section section--last">
+        <h2>困ったとき</h2>
+        <p>
+          不具合や接続の報告は
+          <a href="https://github.com/mmf-app/zdeck-installer/issues">Issues</a>
+          へ。OS / ZBrush バージョン / 再現手順があると助かります。
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span class="brand brand--sm">zdeck</span>
+      <a href="README.md">手順メモ（README）</a>
+    </footer>
+
+    <script>
+      fetch("./latest.json")
+        .then(function (r) {
+          return r.json();
+        })
+        .then(function (data) {
+          var ver = document.getElementById("release-version");
+          var date = document.getElementById("release-date");
+          if (ver && data.version) ver.textContent = "v" + data.version;
+          if (date && data.releasedAt) {
+            date.textContent = " · " + String(data.releasedAt).slice(0, 10);
+          }
+        })
+        .catch(function () {
+          var ver = document.getElementById("release-version");
+          if (ver) ver.textContent = "Releases を参照";
+        });
+    </script>
+  </body>
+</html>
