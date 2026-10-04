@@ -2,8 +2,7 @@
 
 **日本語** · [English](#english)
 
-iPad / Android から ZBrush を操作するコントローラー。  
-このリポジトリは PC 向けインストールパッケージのみ（ソースコードは含みません）。
+モバイルアプリ「zdeck」の PC 接続用クライアント。
 
 ---
 
@@ -15,7 +14,6 @@ iPad / Android から ZBrush を操作するコントローラー。
 |---------|------|
 | [`zdeck-python-win-setup.exe`](../../releases/latest) | ZBrush 2026 / Windows |
 
-バージョン番号・チェックサム: [`latest.json`](./latest.json)  
 macOS / ZBrush 2022–2025（ZScript）は準備中。
 
 ### インストール
@@ -43,7 +41,7 @@ macOS / ZBrush 2022–2025（ZScript）は準備中。
 
 ### 不具合
 
-報告は [Issues](../../issues) へ。次を含めてください。
+報告は [Issues](../../issues) へ。以下のテンプレートに従って記述してください。
 
 ```
 - OS:
@@ -61,8 +59,7 @@ macOS / ZBrush 2022–2025（ZScript）は準備中。
 
 ## English
 
-Controller for ZBrush from iPad / Android.  
-This repo hosts **PC install packages only** (no app source).
+PC client for the mobile app **zdeck**.
 
 ### Download
 
@@ -70,7 +67,6 @@ This repo hosts **PC install packages only** (no app source).
 |------|--------|
 | [`zdeck-python-win-setup.exe`](../../releases/latest) | ZBrush 2026 / Windows |
 
-Version / checksums: [`latest.json`](./latest.json)  
 macOS and ZBrush 2022–2025 (ZScript): coming soon.
 
 ### Install
@@ -98,7 +94,7 @@ Store release planned.
 
 ### Issues
 
-Report via [Issues](../../issues). Please include:
+Report via [Issues](../../issues). Please follow this template:
 
 ```
 - OS:
