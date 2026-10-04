@@ -223,7 +223,7 @@ main {
 }
 
 .section__lede--strong {
-  max-width: 40ch;
+  max-width: none;
   color: var(--ink);
   font-size: 1.08rem;
   font-weight: 600;
