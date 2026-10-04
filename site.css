@@ -2,13 +2,13 @@
   --ink: #e8e8e8;
   --muted: #9a9a9a;
   --paper: #1a1a1a;
-  --raised: #1f1f1f;
+  --raised: #242424;
   --sunken: #141414;
   --panel: #2b2b2b;
   --line: #3a3a3a;
-  --accent: #ff6a00;
-  --accent-soft: #ff8533;
-  --accent-dim: #a34500;
+  --accent: #c96a32;
+  --accent-soft: #d9844c;
+  --accent-dim: #8a4a22;
   --key: #333333;
   --brand: "Manrope", "Segoe UI", sans-serif;
   --body: "Source Sans 3", "Segoe UI", sans-serif;
@@ -45,9 +45,7 @@ a:hover {
 }
 
 .band--hero {
-  background:
-    radial-gradient(900px 520px at 85% 10%, rgba(255, 106, 0, 0.18), transparent 58%),
-    var(--paper);
+  background: var(--paper);
 }
 
 .brand {
@@ -135,7 +133,7 @@ a:hover {
 }
 
 .btn--ghost:hover {
-  background: rgba(255, 106, 0, 0.12);
+  background: rgba(201, 106, 50, 0.14);
   color: var(--ink);
 }
 
@@ -154,7 +152,7 @@ a:hover {
   gap: 0.7rem;
   padding: 1.1rem;
   border-radius: 1.4rem;
-  background: linear-gradient(160deg, #242424, #1a1a1a 55%, #2a180c);
+  background: linear-gradient(160deg, #242424, #1a1a1a 70%, #222);
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
 }
 
@@ -169,16 +167,12 @@ a:hover {
   background: #3f3f3f;
 }
 
-.deck span:nth-child(5) {
-  background: rgba(255, 106, 0, 0.55);
-}
-
 .deck span:nth-child(2) {
   animation-delay: 0.15s;
 }
 .deck span:nth-child(5) {
   animation-delay: 0.3s;
-  background: rgba(255, 106, 0, 0.55);
+  background: rgba(201, 106, 50, 0.4);
 }
 .deck span:nth-child(8) {
   animation-delay: 0.45s;
@@ -202,24 +196,12 @@ main {
   margin-right: auto;
 }
 
-#get {
-  background: var(--raised);
-}
-
-#features {
-  background: #242424;
-}
-
-#pricing {
-  background: var(--raised);
-}
-
-#release {
-  background: #242424;
-}
-
+#get,
+#features,
+#pricing,
+#release,
 #contact {
-  background: var(--sunken);
+  background: var(--paper);
 }
 
 .section--last {
@@ -604,7 +586,7 @@ main {
   align-items: baseline;
   justify-content: space-between;
   border-top: 1px solid var(--line);
-  background: var(--sunken);
+  background: var(--paper);
   color: var(--muted);
   font-size: 0.95rem;
 }
