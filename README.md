@@ -1,4 +1,4 @@
-# zdeck
+# zdeck-installer
 
 **日本語** · [English](#english)
 
