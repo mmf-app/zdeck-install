@@ -6,7 +6,7 @@
     <title>zdeck — タブレットから ZBrush を操作</title>
     <meta
       name="description"
-      content="zdeck は iPad / Android から ZBrush を操作するコントローラーです。機能・料金・導入手順をまとめています。"
+      content="zdeck は iPad / Android から ZBrush を操作するコントローラーです。機能・料金・PC インストールをまとめています。"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,8 +27,8 @@
           同じ Wi‑Fi 上の PC に接続し、カスタムデッキでブラシやジオメトリを素早く叩くためのコントローラーです。
         </p>
         <div class="cta">
-          <a class="btn btn--primary" href="#get">入手する</a>
-          <a class="btn btn--ghost" href="#setup">導入手順</a>
+          <a class="btn btn--primary" href="#install">PC をインストール</a>
+          <a class="btn btn--ghost" href="#get">アプリを入手</a>
         </div>
       </div>
       <div class="hero__visual" aria-hidden="true">
@@ -42,35 +42,82 @@
 
     <main>
       <section id="get" class="section">
-        <h2>入手</h2>
-        <p class="section__lede">アプリはストアから。PC 側は ZBrush のバージョンに合うインストーラを選んでください。</p>
-        <div class="get-grid">
-          <div>
-            <h3>アプリ</h3>
-            <ul class="plain">
-              <li><a href="https://www.apple.com/jp/app-store/">App Store</a>（公開予定）</li>
-              <li><a href="https://play.google.com/store">Google Play</a>（公開予定）</li>
-            </ul>
-          </div>
-          <div>
-            <h3>PC クライアント</h3>
-            <ul class="plain">
-              <li>
-                ZBrush 2026 / Windows —
-                <a href="https://github.com/mmf-app/zdeck-installer/releases/latest/download/zdeck-python-win-setup.exe"
-                  >zdeck-python-win-setup.exe</a
-                >
-              </li>
-              <li>
-                ZBrush 2022–2025 / Windows —
-                <a href="https://github.com/mmf-app/zdeck-installer/releases/latest/download/zdeck-zscript-win-setup.exe"
-                  >zdeck-zscript-win-setup.exe</a
-                >
-              </li>
-              <li>macOS — 準備中</li>
-            </ul>
+        <h2>アプリ</h2>
+        <p class="section__lede">モバイルアプリは各ストアからダウンロードできます（公開準備中）。</p>
+        <div class="store-row">
+          <a
+            class="store-badge store-badge--ios"
+            href="https://www.apple.com/jp/app-store/"
+            aria-label="Download on the App Store（公開予定）"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="store-badge__icon">
+              <path
+                fill="currentColor"
+                d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"
+              />
+            </svg>
+            <span class="store-badge__text">
+              <span class="store-badge__eyebrow">Download on the</span>
+              <span class="store-badge__name">App Store</span>
+              <span class="store-badge__note">公開予定</span>
+            </span>
+          </a>
+          <a
+            class="store-badge store-badge--gp"
+            href="https://play.google.com/store"
+            aria-label="Get it on Google Play（公開予定）"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="store-badge__icon">
+              <path fill="#ea4335" d="M3.6 2.2 13.5 12 3.6 21.8c-.4-.2-.6-.6-.6-1.1V3.3c0-.5.2-.9.6-1.1z" />
+              <path fill="#fbbc04" d="m13.5 12 2.7-2.7 4.6 2.6c.7.4.7 1.4 0 1.8l-4.6 2.6L13.5 12z" />
+              <path fill="#4285f4" d="M13.5 12 3.6 2.2c.3-.2.7-.2 1.1 0l11.5 6.5L13.5 12z" />
+              <path fill="#34a853" d="m13.5 12 2.7 2.7-11.5 6.5c-.4.2-.8.2-1.1 0L13.5 12z" />
+            </svg>
+            <span class="store-badge__text">
+              <span class="store-badge__eyebrow">GET IT ON</span>
+              <span class="store-badge__name">Google Play</span>
+              <span class="store-badge__note">公開予定</span>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <section id="install" class="section section--install">
+        <p class="eyebrow">Required for connection</p>
+        <h2>PC クライアントをインストール</h2>
+        <p class="section__lede section__lede--strong">
+          zdeck を使うには、ZBrush が入っている Windows PC に専用クライアントが必要です。お使いの ZBrush
+          バージョンに合うインストーラを選んでください。
+        </p>
+        <div class="install-grid">
+          <a
+            class="install-card"
+            href="https://github.com/mmf-app/zdeck-installer/releases/latest/download/zdeck-python-win-setup.exe"
+          >
+            <span class="install-card__target">ZBrush 2026</span>
+            <span class="install-card__os">Windows</span>
+            <span class="install-card__file">zdeck-python-win-setup.exe</span>
+            <span class="install-card__cta">ダウンロード</span>
+          </a>
+          <a
+            class="install-card"
+            href="https://github.com/mmf-app/zdeck-installer/releases/latest/download/zdeck-zscript-win-setup.exe"
+          >
+            <span class="install-card__target">ZBrush 2022–2025</span>
+            <span class="install-card__os">Windows</span>
+            <span class="install-card__file">zdeck-zscript-win-setup.exe</span>
+            <span class="install-card__cta">ダウンロード</span>
+          </a>
+          <div class="install-card install-card--soon" aria-disabled="true">
+            <span class="install-card__target">macOS</span>
+            <span class="install-card__os">準備中</span>
+            <span class="install-card__file">近日公開予定</span>
           </div>
         </div>
+        <p class="install-note">
+          インストール後は ZBrush を一度終了して開き直してください。2022–2025 をご利用の場合は、Zplugin メニューから
+          <strong>Start zdeck</strong> を実行すると接続の準備が整います。
+        </p>
       </section>
 
       <section id="features" class="section">
@@ -85,79 +132,156 @@
 
       <section id="pricing" class="section">
         <h2>料金</h2>
-        <p class="section__lede">価格は各ストアの表示に準拠します。ログインやアカウント登録は不要です。</p>
+        <p class="section__lede">
+          アプリ内で完結します。アカウント登録は不要です。表示価格は予定の目安で、公開時は各ストアの表記が正式となります。
+        </p>
         <div class="price-row">
           <article>
             <h3>Free</h3>
-            <p>お試し利用。シート数・タイル数などに上限あり。初回利用から短期間はフル操作を体験できます。</p>
+            <p class="price"><span class="price__value">¥0</span></p>
+            <p>お試しプラン。シート数・タイル数などに上限があります。初回利用から 3 日間はフル機能を体験できます。</p>
           </article>
           <article>
             <h3>Pro</h3>
-            <p>買い切り。レイアウト制限を解除し、通常の制作フロー向けに使えます。</p>
+            <p class="price"><span class="price__value">¥1,600</span><span class="price__unit">買い切り</span></p>
+            <p>レイアウト制限を解除し、日常の制作フロー向けに無期限で利用できます。</p>
           </article>
           <article>
             <h3>Pro+</h3>
-            <p>年額。Pro の内容に加え、追加の継続特典を予定しています。</p>
+            <p class="price"><span class="price__value">¥2,400</span><span class="price__unit">/ 年</span></p>
+            <p>Pro の内容に加え、継続利用向けの追加特典を予定しています。</p>
           </article>
         </div>
       </section>
 
-      <section id="setup" class="section">
-        <h2>導入</h2>
-        <ol class="steps">
-          <li>スマホ / タブレットと PC を同じ Wi‑Fi に接続する</li>
-          <li>上の表から ZBrush に合う exe を入れ、案内に従う</li>
-          <li>ZBrush を開き直す（2022–2025 は Zplugin → <strong>Start zdeck</strong> を一度押す）</li>
-          <li>zdeck アプリを開き、PC を選ぶ（出なければ再検索、または IP 入力）</li>
-        </ol>
-      </section>
-
       <section id="release" class="section">
         <h2>リリース</h2>
-        <p class="section__lede">
-          最新ホストパッケージ:
-          <strong id="release-version">…</strong>
-          <span id="release-date" class="muted"></span>
-        </p>
-        <p>
-          <a id="release-link" href="https://github.com/mmf-app/zdeck-installer/releases/latest"
-            >GitHub Releases で詳細を見る</a
-          >
+        <p class="section__lede">PC クライアントの公開履歴です。最新版は一覧の先頭に表示されます。</p>
+        <div class="release-panel" tabindex="0" aria-label="リリース履歴">
+          <div id="release-list" class="release-list">
+            <p class="muted">読み込み中…</p>
+          </div>
+        </div>
+        <p class="release-more">
+          <a href="https://github.com/mmf-app/zdeck-installer/releases">すべてのリリースを GitHub で見る</a>
         </p>
       </section>
 
-      <section id="help" class="section section--last">
-        <h2>困ったとき</h2>
+      <section id="contact" class="section section--last">
+        <h2>お問い合わせ</h2>
         <p>
-          不具合や接続の報告は
-          <a href="https://github.com/mmf-app/zdeck-installer/issues">Issues</a>
-          へ。OS / ZBrush バージョン / 再現手順があると助かります。
+          製品に関するご質問、接続やインストールで解決しない事象については、
+          <a href="https://github.com/mmf-app/zdeck-installer/issues">サポート窓口（GitHub Issues）</a>
+          よりお問い合わせください。
+        </p>
+        <p class="contact-meta">
+          対応を円滑に進めるため、ご利用環境（OS とバージョン）、ZBrush のバージョン、zdeck
+          アプリおよび PC クライアントのバージョン、発生状況と期待される動作をご記入いただけますと幸いです。
         </p>
       </section>
     </main>
 
     <footer class="footer">
       <span class="brand brand--sm">zdeck</span>
-      <a href="README.md">手順メモ（README）</a>
+      <a href="README.md">詳細な手順（README）</a>
     </footer>
 
     <script>
-      fetch("./latest.json")
-        .then(function (r) {
-          return r.json();
-        })
-        .then(function (data) {
-          var ver = document.getElementById("release-version");
-          var date = document.getElementById("release-date");
-          if (ver && data.version) ver.textContent = "v" + data.version;
-          if (date && data.releasedAt) {
-            date.textContent = " · " + String(data.releasedAt).slice(0, 10);
+      (function () {
+        var list = document.getElementById("release-list");
+        if (!list) return;
+
+        function esc(s) {
+          return String(s)
+            .replace(/&/g, "&amp;")
+            .replace(/</g, "&lt;")
+            .replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;");
+        }
+
+        function renderFromLatest(data) {
+          var packages = data.packages || [];
+          var body =
+            packages.length === 0
+              ? "<p class='muted'>パッケージ情報はありません。</p>"
+              : "<ul>" +
+                packages
+                  .map(function (p) {
+                    return (
+                      "<li><strong>" +
+                      esc(p.target || p.id) +
+                      "</strong> — " +
+                      esc(p.file) +
+                      "</li>"
+                    );
+                  })
+                  .join("") +
+                "</ul>";
+          list.innerHTML =
+            "<article class='release-item'>" +
+            "<header><span class='release-item__tag'>v" +
+            esc(data.version || "?") +
+            "</span><time>" +
+            esc(String(data.releasedAt || "").slice(0, 10)) +
+            "</time></header>" +
+            "<p class='release-item__title'>最新ホストパッケージ</p>" +
+            body +
+            "</article>";
+        }
+
+        function renderReleases(releases) {
+          if (!releases.length) {
+            list.innerHTML = "<p class='muted'>公開リリースはまだありません。</p>";
+            return;
           }
-        })
-        .catch(function () {
-          var ver = document.getElementById("release-version");
-          if (ver) ver.textContent = "Releases を参照";
-        });
+          list.innerHTML = releases
+            .slice(0, 12)
+            .map(function (r) {
+              var assets = (r.assets || [])
+                .map(function (a) {
+                  return "<li><a href='" + esc(a.browser_download_url) + "'>" + esc(a.name) + "</a></li>";
+                })
+                .join("");
+              var notes = (r.body || "").trim();
+              var noteHtml = notes
+                ? "<p class='release-item__notes'>" + esc(notes.split("\n")[0]).slice(0, 180) + "</p>"
+                : "";
+              return (
+                "<article class='release-item'>" +
+                "<header><span class='release-item__tag'>" +
+                esc(r.tag_name || r.name || "") +
+                "</span><time>" +
+                esc(String(r.published_at || r.created_at || "").slice(0, 10)) +
+                "</time></header>" +
+                "<p class='release-item__title'>" +
+                esc(r.name || r.tag_name || "Release") +
+                "</p>" +
+                noteHtml +
+                (assets ? "<ul>" + assets + "</ul>" : "") +
+                "</article>"
+              );
+            })
+            .join("");
+        }
+
+        fetch("https://api.github.com/repos/mmf-app/zdeck-installer/releases?per_page=12")
+          .then(function (r) {
+            if (!r.ok) throw new Error("api");
+            return r.json();
+          })
+          .then(renderReleases)
+          .catch(function () {
+            fetch("./latest.json")
+              .then(function (r) {
+                return r.json();
+              })
+              .then(renderFromLatest)
+              .catch(function () {
+                list.innerHTML =
+                  "<p class='muted'><a href='https://github.com/mmf-app/zdeck-installer/releases'>Releases</a> を参照してください。</p>";
+              });
+          });
+      })();
     </script>
   </body>
 </html>
