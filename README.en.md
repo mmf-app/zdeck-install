@@ -8,16 +8,18 @@ PC client for the mobile app **zdeck**.
 
 | Target | File |
 |--------|------|
-| ZBrush 2026 / Windows | [`zdeck-python-win-setup.exe`](../../releases/latest) |
+| ZBrush 2026 / Windows | [`zdeck-python-win-setup.exe`](../../releases/latest/download/zdeck-python-win-setup.exe) |
+| ZBrush 2022–2025 / Windows | [`zdeck-zscript-win-setup.exe`](../../releases/latest/download/zdeck-zscript-win-setup.exe) |
 
-macOS and ZBrush 2022–2025 (ZScript): coming soon.
+macOS: coming soon.
 
 ### Install
 
-1. Download `zdeck-python-win-setup.exe`  
+1. Download the exe that matches your ZBrush  
 2. Run it (SmartScreen → **More info** → **Run anyway**)  
 3. Follow the wizard  
 4. If ZBrush was open, quit and reopen it  
+5. **2022–2025 (ZScript) only:** Zplugin → **Start zdeck** once  
 
 ### Connect
 
@@ -26,7 +28,7 @@ macOS and ZBrush 2022–2025 (ZScript): coming soon.
 3. Select the PC (or search again / enter IP)  
 4. If connected but nothing happens  
    - **2026**: restart ZBrush  
-   - **2022–2025 (soon)**: Zplugin → **Start zdeck** once  
+   - **2022–2025**: Zplugin → **Start zdeck** once  
 
 ### App
 

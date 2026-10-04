@@ -8,16 +8,18 @@
 
 | 対象 | ファイル |
 |------|---------|
-| ZBrush 2026 / Windows | [`zdeck-python-win-setup.exe`](../../releases/latest) |
+| ZBrush 2026 / Windows | [`zdeck-python-win-setup.exe`](../../releases/latest/download/zdeck-python-win-setup.exe) |
+| ZBrush 2022–2025 / Windows | [`zdeck-zscript-win-setup.exe`](../../releases/latest/download/zdeck-zscript-win-setup.exe) |
 
-macOS / ZBrush 2022–2025（ZScript）は準備中。
+macOS 版は準備中。
 
 ### インストール
 
-1. `zdeck-python-win-setup.exe` をダウンロード  
+1. 上表から自分の ZBrush に合う exe をダウンロード  
 2. 実行（SmartScreen →「詳細情報」→「実行」）  
 3. 画面の案内に従う  
 4. ZBrush が開いていたら一度終了して開き直す  
+5. **2022–2025（ZScript）のみ:** Zplugin → **Start zdeck** を一度押す  
 
 ### 接続
 
@@ -26,7 +28,7 @@ macOS / ZBrush 2022–2025（ZScript）は準備中。
 3. PC を選ぶ（出なければ再検索、または IP 入力）  
 4. 操作が届かないとき  
    - **2026**: ZBrush を再起動  
-   - **2022–2025（準備中）**: Zplugin → **Start zdeck** を一度押す  
+   - **2022–2025**: Zplugin → **Start zdeck** を一度押す  
 
 ### アプリ
 
